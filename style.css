@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.banner
+{
+    display: flex;
+    background-image: url('buyers.jpg');
+    justify-content: center;
+    height: 45%;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+.hashtag
+{
+    font-size: 40px;
+    color: #66ffff;
+    animation: colorSwitch 5s infinite;
+}
+
+@keyframes colorSwitch{
+    0%{
+        color: #66ffff;
+    }
+    50%{
+        color: #ff6666;
+    }
+    100%{
+        color: #66ffff;
+    }
+}
+
+.hashtaghalf{
+    color: #ff6666;
+    animation: switch 5s infinite;
+}
+
+@keyframes switch{
+    0%{
+        color: #ff6666;
+    }
+    50%{
+        color: #66ffff;
+    }
+    100%{
+        color: #ff6666;
+    }
+}
+
+.link:hover{
+    font-size: 14px;
+    color: #e67e22;
+    cursor: pointer;
+}
+
+hr { 
+    height: 30px; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 1px 0 0 0; 
+    border-radius: 20px; 
+} 
+
+hr::before { 
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px; 
+}
+  
+.heading{    
+    align-items: center;
+    display: flex;
+    font-size: 55px;
+    color: #fff;
+}
+
+.main-navigation{
+    height: 40px;
+    background-color:#e67e22;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-item{
+    width: 15%;
+    display: inline-block;
+    height: 100%;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: width 0.5s;
+    color: #fff;
+}
+
+.nav-item:hover{
+    background-color: #d35400;
+    width: 20%;
+}
+
+section{
+    padding: 40px;
+}
+
+.section-heading{
+    font-size: 28px;
+    color: #e67e22;
+}
+
+.page-heading{
+    font-size: 45px;
+    padding: 40px;
+    display: block;
+}
+
+.page-heading::after{
+    content: "...";
+    color: #d35400;
+}
+
+
+.section-content{
+    margin-top: 20px;
+}
+
+ul li{
+    padding: 5px;
+    list-style: none;
+}
+
+ul li::before{
+    content: "\2022";
+    padding-right: 10px;
+    color: #e67e22;
+    font-size: 1em;
+}
+
+.link{
+    text-decoration: underline;
+    color: lightslategray;
+    transition: font-size 0.5s;
+}
+
+
+.back{
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.back:hover{
+    color: #e67e22;
+}
+
+.back::before{
+    content: "←";
+    color: #e67e22;
+}
+
+@media (max-height: 500px){
+    
+    .heading{
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .nav-item{
+        font-size: 10px;
+    }
+}
